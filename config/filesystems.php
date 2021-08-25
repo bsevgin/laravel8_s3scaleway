@@ -53,6 +53,15 @@ return [
             'use_path_style_endpoint' => env('AWS_USE_PATH_STYLE_ENDPOINT', false),
         ],
 
+        'scaleway_s3' => [
+            'driver' => 's3',
+            'key'    => env('SW_ACCESS_KEY'),
+            'secret' => env('SW_SECRET_ACCESS_KEY'),
+            'bucket' => env('SW_BUCKET'),
+            'region' => env('SW_REGION'),
+            'endpoint' => env('SW_ENDPOINT'),
+        ],
+
     ],
 
     /*
